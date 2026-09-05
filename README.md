@@ -7,7 +7,14 @@ status: ativo
 
 # VSL Livelongs Replica
 
-Réplica visual da página `https://livelongs.online/vsl`, construída com React, TypeScript e Vinext.
+Réplica visual das páginas de oferta do domínio `https://livelongs.online`, construída com React, TypeScript e Vinext.
+
+## Rotas incluídas
+
+- `/` — VSL principal
+- `/up` — confirmação de acesso e oferta em vídeo
+- `/bonustg` — bônus TG Academy
+- `/upsell` — upsell Método Sedução Invisível
 
 ## Desenvolvimento
 
@@ -16,4 +23,4 @@ npm install
 npm run dev
 ```
 
-O player de vídeo é carregado diretamente do provedor usado pela página de referência. Scripts de analytics e pixels de rastreamento não foram copiados.
+Os players e vídeos são carregados diretamente dos provedores usados pelas páginas de referência. Scripts de analytics e pixels de rastreamento não foram copiados.

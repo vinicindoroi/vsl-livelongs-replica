@@ -18,7 +18,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="page-shell">
+    <main className="page-shell vsl-page">
       <section className="content">
         <h1>
           FAÇA <span>ELA G@Z4R</span> EM MENOS DE 5 MINUTOS
@@ -27,28 +27,27 @@ export default function Home() {
         <p>Assista até o final antes que esse vídeo saia do ar. 🔞</p>
 
         <div className="player-wrap">
-          {createElement('vturb-smartplayer', {
-            id: PLAYER_ID,
-            style: {
-              display: 'block',
-              margin: '0 auto',
-              width: '100%',
-              maxWidth: 'var(--player-vertical-width, 400px)',
+          {createElement(
+            'vturb-smartplayer',
+            {
+              id: PLAYER_ID,
+              style: {
+                display: 'block',
+                margin: '0 auto',
+                width: '100%',
+                maxWidth: 'var(--player-vertical-width, 400px)',
+              },
             },
-          },
-          <div
-            slot="preload"
-            className="player-preload"
-            key="preload"
-          >
-            <div
-              id="loading_69f61cddac9b67e415ce2412"
-              className="player-loading"
-            >
-              <div className="player-spinner" />
-              <div className="player-percentage">99%</div>
-            </div>
-          </div>)}
+            <div slot="preload" className="player-preload" key="preload">
+              <div
+                id="loading_69f61cddac9b67e415ce2412"
+                className="player-loading"
+              >
+                <div className="player-spinner" />
+                <div className="player-percentage">99%</div>
+              </div>
+            </div>,
+          )}
         </div>
       </section>
     </main>
